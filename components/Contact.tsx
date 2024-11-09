@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import Button from "./ui components/Button";
 import Button2 from "./ui components/Button2";
 const Contact = () => {
   const Whatsapplink: string = "#";
