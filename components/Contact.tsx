@@ -1,10 +1,12 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Button2 from "./ui components/Button2";
+import Link from "next/link";
 const Contact = () => {
-  const Whatsapplink: string = "#";
-  const Linkedinlink: string = "#";
-  const Githublink: string = "#";
+  // links 
+  const Whatsapplink:string="https://wa.me/message/6RMRPE5J3PRGL1"
+  const Linkedinlink:string="https://www.linkedin.com/in/abdul-rafay-073187278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  const Githublink:string="https://github.com/abdulrafay-webdev"
 
   return (
     // <section className={styles.contactSection}>
@@ -188,15 +190,15 @@ const Contact = () => {
               +92 313 235 4942
             </p>
             <div className="inline-flex gap-2 mt-3">
-              <a href={Whatsapplink} className="text-white text-2xl transition-colors duration-300 hover:text-[#4a90e2]">
+              <Link target="blank" href={Whatsapplink} className="text-white text-2xl transition-colors duration-300 hover:text-[#4a90e2]">
                 <FaWhatsapp />
-              </a>
-              <a href={Linkedinlink} className="text-white text-2xl transition-colors duration-300 hover:text-[#4a90e2]">
+              </Link>
+              <Link target="blank" href={Linkedinlink} className="text-white text-2xl transition-colors duration-300 hover:text-[#4a90e2]">
                 <FaLinkedin />
-              </a>
-              <a href={Githublink} className="text-white text-2xl transition-colors duration-300 hover:text-[#4a90e2]">
+              </Link>
+              <Link target="blank" href={Githublink} className="text-white text-2xl transition-colors duration-300 hover:text-[#4a90e2]">
                 <FaGithub />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

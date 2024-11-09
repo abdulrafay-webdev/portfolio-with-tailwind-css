@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button2 from "./ui components/Button2";
 import profilepic from "../images/rp.jpeg"
+import Link from "next/link";
 
 const About = () => {
   const shortBio: string =
@@ -37,7 +38,9 @@ const About = () => {
           <h1 className="h1 text-[#e8f1f2] mt-5 text-xl font-semibold text-center bg-[#1a2b3c] pt-0">Skills</h1>
           <p className="p text-[#e8f1f2] text-[18px] my-5 text-center">{LongBio}</p>
           <div className="self-center">
+            <Link href={"/contact"}>
           <Button2>Feel free to reach out</Button2>
+          </Link>
           </div>
         </div>
       </div>

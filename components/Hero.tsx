@@ -16,35 +16,35 @@ export const Hero = () => {
   const bio:string="Creating engaging, user-friendly digital experiences with a focus on modern design and performance"
 
   // links 
-  const WhatsappLink:string="#"
-  const LinkedinLink:string="#"
-  const GithubLink:string="#"
+  const WhatsappLink:string="https://wa.me/message/6RMRPE5J3PRGL1"
+  const LinkedinLink:string="https://www.linkedin.com/in/abdul-rafay-073187278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  const GithubLink:string="https://github.com/abdulrafay-webdev"
 
 
   return (
     <div className="main md:flex-row w-full h-fit bg-gradient-to-b from-[#0F2027] via-[#203A43] to-[#2C5364] md:p-8 p-1 flex flex-col items-center">
       {/* left  */}
-      <div className="left flex flex-col gap-7 p-1 w-[59%] my-12 md:text-left text-center sm:mt-8 sm:w-full">
+      <div className="left flex flex-col gap-7 p-1 md:w-[59%] my-12 md:text-left text-center sm:mt-8 w-full">
         <h3 className="h3 text-[#66A5AD] font-normal text-[20px]">Hey,It&apos;s Me </h3>
         <h1 className="h1 text-[#E8F1F2] font-black text-[48px]">{name}</h1>
         <h3 className="h3 text-[#66A5AD] font-normal text-[20px]">{designation}</h3>
         <p className="p text-[#A9BDC3]">{bio}</p>
         {/* buttons  */}
         <div className="buttons w-full flex md:justify-start justify-center gap-2.5 mt-1 mb-0">
-          <Link href={"#"}>
+          <Link href={"/projects"}>
             <Button>
-              View My Work <IoIosArrowDropright className="ml-2 priicons text-lg" />{" "}
+              View My Work <IoIosArrowDropright className="ml-2 priicons text-lg" />
             </Button>
           </Link>
-          <Link href={"#"}>
+          <Link href={"/contact"}>
             <Button2>Contact Me</Button2>
           </Link>
         </div>
         {/* social media icons  */}
         <div className="icons w-full flex gap-5 justify-center md:justify-start">
-          <Link href={WhatsappLink}><FaWhatsapp className="secicons text-[#A7C5C6] text-[40px] hover:text-[#86B0B3]" /></Link>
-          <Link href={LinkedinLink}><FaLinkedin className="secicons text-[#A7C5C6] text-[40px] hover:text-[#86B0B3]" /></Link>
-          <Link href={GithubLink}><FaGithub className="secicons text-[#A7C5C6] text-[40px] hover:text-[#86B0B3]" /></Link>
+          <Link target="blank" href={WhatsappLink}><FaWhatsapp className="secicons text-[#A7C5C6] text-[40px] hover:text-[#86B0B3]" /></Link>
+          <Link target="blank" href={LinkedinLink}><FaLinkedin className="secicons text-[#A7C5C6] text-[40px] hover:text-[#86B0B3]" /></Link>
+          <Link target="blank" href={GithubLink}><FaGithub className="secicons text-[#A7C5C6] text-[40px] hover:text-[#86B0B3]" /></Link>
         </div>
       </div>
       {/* right  */}
